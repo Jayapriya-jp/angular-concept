@@ -1,0 +1,30 @@
+<p>angular-concept works!</p>
+<section (mouseover)="onMouseOver()">
+    There's a secret message for you, hover to reveal:
+    {{ message }}
+  </section>
+  <section (click)="greet()">
+    There's a secret message for you, click to reveal:
+    {{ message123 }}
+
+  </section>
+  <h1>Hello{{city}}</h1>
+<h2>username:{{username}}</h2>
+
+@if (isLoggedIn) {
+    <p>Yes, the server is running</p>
+  }
+  @else {
+    <p>No, the server is not running</p>cd
+  }
+  @for (user of users;track user.id){
+  <p>
+    {{user.name}}
+  </p>
+  <p>
+    {{user.id}}
+  </p>
+}
+<div [contentEditable]="isEditable">IMAGE</div> 
+ <div [contentEditable]="content">NO IMAGE</div> 
+
